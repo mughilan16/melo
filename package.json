@@ -1,8 +1,8 @@
 {
-  "name": "music-player",
-  "productName": "music-player",
+  "name": "melo",
+  "productName": "melo",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Melo - Offline Music Player",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",

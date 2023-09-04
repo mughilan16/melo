@@ -209,7 +209,7 @@ class MusicPlayer {
     console.log(this.currentSongId)
     this.currentSong = list[this.currentSongId];
     this.audio = new Audio(this.basicPath + this.currentSong + ".mp3");
-    this.audio.addEventListener("ended", this.next)
+    this.audio.addEventListener("ended", () => this.next())
     this.updateTitle();
     this.audio.play();
   }
@@ -265,4 +265,3 @@ document.querySelector("#play").addEventListener("click", playHandler);
 document.querySelector("#pause").addEventListener("click", pauseHandler);
 document.querySelector("#next").addEventListener("click", nextHandler);
 document.querySelector("#prev").addEventListener("click", prevHandler);
-
